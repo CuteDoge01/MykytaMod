@@ -1,0 +1,34 @@
+plugins {
+    id 'fabric-loom' version '1.8.11'
+}
+
+version = project.version
+group = project.maven_group
+
+repositories {
+    // Add repositories to retrieve artifacts from in here.
+    // You can use mavenLocal() to test locally.
+}
+
+dependencies {
+    // The minecraft dependency.
+    minecraft "com.mojang:minecraft:1.21.4"
+    // The mappings for the minecraft dependency.
+    mappings "net.fabricmc:yarn:1.21.4+build.1:v2"
+    // The fabric loader dependency.
+    modImplementation "net.fabricmc:fabric-loader:0.16.14"
+    // The fabric api dependency.
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.119.3+1.21.4"
+}
+
+loom {
+    accessWidenerPath = file("src/main/resources/mykytamod.accesswidener")
+}
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}

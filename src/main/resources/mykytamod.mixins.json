@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.cutedoge.mykytamod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": [
+    "FoxEntityRenderStateMixin",
+    "FoxEntityRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

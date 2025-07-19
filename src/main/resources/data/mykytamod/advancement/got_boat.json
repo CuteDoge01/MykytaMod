@@ -1,0 +1,26 @@
+{
+  "display": {
+    "title": {
+      "text": "A Gift from a Friend"
+    },
+    "description": {
+      "text": "Mykyta gave you a boat!"
+    },
+    "icon": {
+      "id": "minecraft:oak_boat"
+    },
+    "hidden": true,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

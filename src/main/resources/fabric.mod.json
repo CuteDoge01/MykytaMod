@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "mykytamod",
+  "version": "1.0.3",
+  "name": "Mykyta Mod",
+  "description": "Adds Mykyta, the blue fox NPC.",
+  "authors": [
+    "CuteDoge"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+  "license": "CC0-1.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.cutedoge.mykytamod.MykytaMod"
+    ],
+    "client": [
+      "com.cutedoge.mykytamod.MykytaModClient"
+    ]
+  },
+  "mixins": [
+    "mykytamod.mixins.json"
+  ],
+  "accessWidener": "mykytamod.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
